@@ -1,0 +1,32 @@
+# Logs and runtime data
+*.log
+*.jsonl
+/var/log/
+/logs/
+
+# Packet captures
+*.pcap
+*.pcapng
+
+# Secrets
+.env
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated reports
+reports/*
+!reports/.gitkeep

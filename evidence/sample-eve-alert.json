@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-07T07:42:11.123456-0700",
+  "flow_id": 1234567890123456,
+  "pcap_cnt": 42,
+  "event_type": "alert",
+  "src_ip": "<CLIENT_IP>",
+  "src_port": 51422,
+  "dest_ip": "<SURICATA_IP>",
+  "dest_port": 9999,
+  "proto": "TCP",
+  "alert": {
+    "action": "allowed",
+    "gid": 1,
+    "signature_id": 1000001,
+    "rev": 1,
+    "signature": "LOCAL LAB Netcat traffic to TCP/9999",
+    "category": "(null)",
+    "severity": 3
+  },
+  "app_proto": "failed"
+}

@@ -1,0 +1,29 @@
+# Example snippets for the authorized lab.
+# Do not replace your complete distribution config with this file.
+# Adapt the existing /etc/suricata/suricata.yaml and preserve version-specific options.
+
+vars:
+  address-groups:
+    HOME_NET: "[<SURICATA_IP>]"
+    EXTERNAL_NET: "any"
+
+default-rule-path: /etc/suricata/rules
+
+rule-files:
+  - suricata.rules
+  - local.rules
+
+outputs:
+  - fast:
+      enabled: yes
+      filename: fast.log
+      append: yes
+
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: eve.json
+      types:
+        - alert
+        - flow
+        - stats
